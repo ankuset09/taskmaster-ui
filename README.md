@@ -1,16 +1,37 @@
-# React + Vite
+# TaskMaster Pro 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, full-stack Task Management application built to demonstrate cloud-native development practices using .NET 8 and React.
 
-Currently, two official plugins are available:
+## 🌐 Live Demo
+* **Frontend:** [https://taskmaster-ui-eight.vercel.app](https://taskmaster-ui-eight.vercel.app)
+* **Backend API:** [Azure Web App Service](https://taskmasterapi20260329100455-cxc3hxfabtatbzhr.southeastasia-01.azurewebsites.net/api/tasks)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ Technology Stack
 
-## React Compiler
+### Frontend
+* **React 18** with **Vite**
+* **Tailwind CSS** for modern, responsive UI
+* **Fetch API** for asynchronous backend communication
+* **Vercel** for automated CI/CD deployment
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Backend
+* **ASP.NET Core 8 Web API**
+* **Entity Framework Core** (Code-First Migrations)
+* **Azure SQL Database** (Cloud-hosted)
+* **Microsoft Entra ID** (Managed Identity) for passwordless database security
 
-## Expanding the ESLint configuration
+## 🏗️ Architecture
+The application follows a decoupled architecture where the React frontend communicates with the RESTful .NET API. Data is persisted in a highly available Azure SQL instance.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
+## 🚀 Key Features
+* **Full CRUD functionality:** Create, Read, Update, and Delete tasks.
+* **Cloud-First:** Fully hosted in the cloud with separated concerns.
+* **Modern Security:** Uses Managed Identity to link Azure services securely without hardcoded credentials.
+* **Responsive Design:** Fully usable on mobile and desktop.
+
+## 🔧 Local Setup
+1. Clone the repository.
+2. Update the `apiUrl` in `App.jsx` to `https://localhost:7125`.
+3. Run `npm install` and `npm run dev`.
